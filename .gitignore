@@ -11,3 +11,7 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+
+# Don't ignore
+!XInputDotNetPure.dll
+!XInputInterface.dll
