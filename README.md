@@ -1,4 +1,4 @@
 CommonUnityExtras
 =================
 
-Miscellaneous scripts and other code that makes Unity even easier to use. 
+Miscellaneous scripts and other code that make Unity even easier to use. 
