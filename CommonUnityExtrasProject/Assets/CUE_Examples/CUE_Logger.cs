@@ -1,4 +1,8 @@
 ﻿using UnityEngine;
+using TimeSpan = System.TimeSpan;
+using DateTime = System.DateTime;
+
+using CUE.DataType;
 
 namespace CUE
 {
@@ -8,11 +12,18 @@ namespace CUE
 		{
 			void Start () 
 			{
-				Debug.Log("Is Windows: " 	+ CUE.System.Platform.IsWindows().ToString());
-				Debug.Log("Is Mac: " 		+ CUE.System.Platform.IsOSX().ToString());
-				Debug.Log("Is Linux: " 		+ CUE.System.Platform.IsLinux().ToString());
-				Debug.Log("Is Web Player: " + CUE.System.Platform.IsWebPlayer().ToString());
-				Debug.Log("Is Editor: " 	+ CUE.System.Platform.IsEditor().ToString());
+				TimeSpan time = DateTime.Now - DateTime.Today;
+				Debug.Log(time.FormattedClockString());
+
+				bool bTrue = "TRUE".ToBoolean();
+				bool bFalse = "false".ToBoolean();
+				bool yYes = "Yes".ToBoolean();
+				bool yNo = "nO".ToBoolean();
+
+				Debug.Log(bTrue.ToString());
+				Debug.Log(bFalse.ToString());
+				Debug.Log(yYes.ToString());
+				Debug.Log(yNo.ToString());
 			}
 
 			/*
