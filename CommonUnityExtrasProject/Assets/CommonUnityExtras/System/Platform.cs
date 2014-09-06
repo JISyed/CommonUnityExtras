@@ -27,8 +27,19 @@ namespace CUE
 
 			public static bool IsWebPlayer()
 			{
-				return Application.platform == RuntimePlatform.WindowsWebPlayer
-					|| Application.platform == RuntimePlatform.OSXWebPlayer;
+				return Application.isWebPlayer;
+			}
+
+			public static bool IsNativePlayer()
+			{
+				return Application.platform == RuntimePlatform.WindowsPlayer
+					|| Application.platform == RuntimePlatform.OSXPlayer
+					|| Application.platform == RuntimePlatform.LinuxPlayer;
+			}
+
+			public static bool IsEditor()
+			{
+				return Application.isEditor;
 			}
 		}
 	}

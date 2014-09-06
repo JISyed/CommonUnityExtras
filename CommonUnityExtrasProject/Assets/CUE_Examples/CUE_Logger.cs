@@ -12,6 +12,7 @@ namespace CUE
 				Debug.Log("Is Mac: " 		+ CUE.System.Platform.IsOSX().ToString());
 				Debug.Log("Is Linux: " 		+ CUE.System.Platform.IsLinux().ToString());
 				Debug.Log("Is Web Player: " + CUE.System.Platform.IsWebPlayer().ToString());
+				Debug.Log("Is Editor: " 	+ CUE.System.Platform.IsEditor().ToString());
 			}
 
 			/*
