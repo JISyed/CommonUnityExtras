@@ -9,6 +9,7 @@ namespace CUE
 		{
 			public float timeInSeconds;
 			public GameObject prefabToSpawn;
+			public bool shouldSelfDestruct = true;
 			
 			// Use this for initialization
 			IEnumerator Start () 
@@ -18,9 +19,12 @@ namespace CUE
 				
 				// Spawn object
 				Instantiate(prefabToSpawn);
-				
-				// Self-destruct
-				Destroy(gameObject);
+
+				if(shouldSelfDestruct)
+				{
+					// Self-destruct
+					Destroy(gameObject);
+				}
 			}
 		}
 	}
